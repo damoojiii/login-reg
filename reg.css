@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter','san-serif','Arial';
+    color: #fafbfc;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: linear-gradient(45deg,#191c20,#15181b);
+}
+.box{
+    background: linear-gradient(45deg,#2b3137,#24292e);
+    border: 0.2rem solid #7d8083;
+    border-radius: .6rem;
+    position: relative;
+    max-width: 700px;
+    width: 50%;
+    padding: 25px;
+}
+.box1{
+    background: linear-gradient(45deg,#2b3137,#24292e);
+    border: 0.2rem solid #7d8083;
+    border-radius: .6rem;
+    position: relative;
+    max-width: 700px;
+    width: 30%;
+    padding: 25px;
+}
+header{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.formbox{
+    margin-top: 30px;
+}
+.inputs{
+    width: 100%;
+    margin-top: 20px;
+}
+.inputs input, .select-box{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid #7d8083;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-top: 8px;
+}
+.column{
+    display: flex;
+    column-gap: 15px;
+}
+.gender-box{
+    margin-top: 20px;
+}
+.gender-box h3{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.gender input{
+    accent-color: #2dba4e;
+}
+.formbox :where(.gender-option, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+.gender{
+    column-gap: 5px;
+    cursor: pointer;
+}
+.formbox :where(.gender input, .gender label){
+    cursor: pointer;
+}
+.select-box{
+    margin-top: 48px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+}
+option:not(:checked) {
+    background-color: #2b3137;
+}
+button{
+    margin-inline: 26%;
+    height: 55px;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 6px;
+    background-color: #2dba4e;
+    transition: all 0.2s ease;
+}
+button a{
+    text-decoration: none;
+}
+.checkbox{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+}
+.checkbox label{
+    cursor:pointer;   
+}
+.checkbox input[type="checkbox"]{
+    height: 16px;
+    width: 16px;
+    accent-color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #56c771;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+::-ms-reveal {
+    filter: invert(100%);
+}
+.link{
+    margin-top: 10px;
+    text-align: center;
+}
+@media(max-width:1024px){
+    box1{
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .box, .box1{
+        width: 100%;
+    }
+    .column{
+        flex-wrap: wrap;
+    }
+    .formbox :where(.gender-option, .gender){
+        row-gap: 15px;
+    }
+    .select-box{
+        margin-top: 16px;
+    }
+}

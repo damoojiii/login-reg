@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <section class="box">
+        <header>Registration Form</header>
+        <form action="#" class="formbox">
+            <div class="inputs">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Full Name" required/>
+            </div>
+            <div class="inputs">
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email" required/>
+            </div>
+            <div class="inputs">
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" required minlength="8"/>
+            </div>
+            <div class="inputs">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" minlength="8"required/>
+            </div>
+            <div class="column">
+                <div class="inputs">
+                    <label>Student Number</label>
+                    <input type="number" placeholder="Enter Student Number" required/>
+                </div>
+                <div class="inputs">
+                    <label>Birth Date</label>
+                    <input type="date" required/>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3>Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="gender" checked/>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="gender"/>
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="gender"/>
+                        <label for="check-other">Other</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="inputs">
+                    <label>Department</label>
+                    <input type="text" placeholder="Enter Department" required/>
+                </div>
+                <div class="select-box">
+                    <select required>
+                        <option hidden>Course</option>
+                        <option>BS Information Technology</option>
+                        <option>BS Computer Science</option>
+                        <option>BS Business Management</option>
+                        <option>BS Computer Engineering</option>
+                        <option>BS Electric Engineering</option>
+                        <option>BS Hospitality Management</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="check" required>
+                <label for="check">Yes, I agree to the Terms & Conditions</label>
+            </div>
+            <button type="submit" id="sign"><a href="login.html" for="sign">Sign Up</a></button>
+        </form>
+    </section>
+</body>
+</html>
